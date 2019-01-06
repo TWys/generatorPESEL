@@ -33,7 +33,7 @@ body {
 .box {
 	border: solid 3px black;
 	margin: 5px 0;
-	position: relative;
+	/*position: relative;*/
 }
 
 .box_title {
@@ -47,9 +47,14 @@ body {
 	font-weight: 500;	
 }
 
+
 .plec {
 	display: inline-block;
 	width: 30%;
+}
+
+.small_screen {
+	display: none;
 }
 
 .data {
@@ -124,4 +129,15 @@ footer > a > .icon-linkedin:hover {
     .icons {
         padding-bottom: 50px;
     }
+}
+
+@media (max-width: 767px) {
+    .big_screen {
+		display: none;
+	}
+	
+	.small_screen {
+		display: inline;
+    }
+
 }

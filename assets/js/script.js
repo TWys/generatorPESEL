@@ -130,4 +130,10 @@ function copyToClipboard(el_id) {
     window.getSelection().addRange(range);
 	document.execCommand("copy");
 	window.getSelection().removeAllRanges();
+	//showPopUp();
 }
+
+/*
+function showPopUp() {
+	document.getElementById("popup").style.display="block";
+} */

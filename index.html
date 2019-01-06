@@ -19,21 +19,21 @@
 	<div class="title">
 		GENERATOR PESEL
 	</div>
-	<div class="row center-lg">
+	<div class="row center-xs">
 		<div class="col-sm-12 col-lg-5 box">
 			<p class="box_title">Generuj losowy numer PESEL</p>
 			<p class="box_desc">Generuje losowy prawidłowy numer PESEL</p>
 			<p class="pesel_box" id="basic_pesel_box"  onclick="copyToClipboard(this.id)"></p>
 			<button class="btn" id="generate_basic">Generuj!</button>
 		</div>
-		<div class="col-lg-1"></div>
+		<div class="col-lg-1 pusty"></div>
 		<div class="col-sm-12 col-lg-5 box">
 			<p class="box_title">Dopasuj numer PESEL</p>
 			<fieldset>
 				<legend>Płeć</legend>
-				<div class="plec"><label><input type="radio" name="plec" id="kobieta" value="kobieta">Kobieta</label></div>
-				<div class="plec"><label><input type="radio" name="plec" id="mezczyzna" value="mezczyzna">Mężczyzna</label></div>
-				<div class="plec"><label><input type="radio" name="plec" id="obojetnie" value="obojetne" checked>Obojętne</label></div>
+				<div class="plec"><label><input type="radio" name="plec" id="kobieta" value="kobieta"><span class="small_screen">K</span><span class="big_screen">Kobieta</span></label></div>
+				<div class="plec"><label><input type="radio" name="plec" id="mezczyzna" value="mezczyzna"><span class="small_screen">M</span><span class="big_screen">Mężczyzna</span></label></div>
+				<div class="plec"><label><input type="radio" name="plec" id="obojetnie" value="obojetne" checked><span class="small_screen">Dow</span><span class="big_screen">Dowolna</span></label></div>
 			</fieldset>
 			<fieldset>
 				<legend>Data urodzenia</legend>
