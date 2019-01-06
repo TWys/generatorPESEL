@@ -76,6 +76,9 @@ function generateAdvanced() {
 	pesel=pesel+mies.toString();
 	
 	dzien=parseInt(dzien,10);	//dzien
+	if (dzien>31) {
+		dzien=31;
+	}
 	if (dzien<10) {
 		dzien = '0'+dzien;
 	}

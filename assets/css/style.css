@@ -113,13 +113,6 @@ footer > a > .icon-linkedin:hover {
     font-size: 25px;
 }
 
-
-
-form:focus {
-    border: 1px solid #2aabd2;
-}
-
-
 @media (max-width: 1030px) {
     footer {
         position: relative;
