@@ -23,7 +23,7 @@
 		<div class="col-sm-12 col-lg-5 box">
 			<p class="box_title">Generuj losowy numer PESEL</p>
 			<p class="box_desc">Generuje losowy prawidłowy numer PESEL</p>
-			<p class="pesel_box" id="basic_pesel_box"  onclick="copyToClipboard(this.id)"></p>
+			<p class="pesel_box" id="basic_pesel_box"  onclick="copyToClipboard(this.id)" title="Kliknij aby skopiować!"></p>
 			<button class="btn" id="generate_basic">Generuj!</button>
 		</div>
 		<div class="col-lg-1 pusty"></div>
@@ -41,7 +41,7 @@
 				<div class="data">Miesiąc: <input type="number" id="miesiac" size="4"  min="1" max="12" placeholder="01" oninput="this.value=this.value.slice(0,2)"></div>
 				<div class="data">Dzień: <input type="number" id="dzien" min="1" max="31" placeholder="01" oninput="this.value=this.value.slice(0,4)"></div>
 			</fieldset>
-			<p class="pesel_box" id="advanced_pesel_box" onclick="copyToClipboard(this.id)"></p>
+			<p class="pesel_box" id="advanced_pesel_box" onclick="copyToClipboard(this.id)" title="Kliknij aby skopiować!"></p>
 			<button class="btn" id="generate_advanced">Generuj!</button>
 		</div>
 	</div>

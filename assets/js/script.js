@@ -63,6 +63,10 @@ function generateAdvanced() {
 	}
 	pesel=tmp.toString();
 	
+	if (isNaN(parseInt(mies))) {
+		mies = rand(1,12);
+	}
+	
 	mies=parseInt(mies,10);	//miesiac
 	if (mies>12) {
 		mies=12;
@@ -74,6 +78,10 @@ function generateAdvanced() {
 		mies = '0'+mies;
 	}
 	pesel=pesel+mies.toString();
+	
+	if (isNaN(parseInt(dzien))) {
+		dzien = rand(1,28);
+	}
 	
 	dzien=parseInt(dzien,10);	//dzien
 	if (dzien>31) {
@@ -111,7 +119,6 @@ function generateAdvanced() {
 	}
 	suma=(9*pesel_tab[0]+7*pesel_tab[1]+3*pesel_tab[2]+pesel_tab[3]+9*pesel_tab[4]+7*pesel_tab[5]+3*pesel_tab[6]+pesel_tab[7]+9*pesel_tab[8]+7*pesel_tab[9])%10;	//suma kontrolna
 	pesel=pesel+suma.toString();
-	console.log(pesel);
 	document.getElementById("advanced_pesel_box").innerHTML = pesel;
 }
 
@@ -132,8 +139,3 @@ function copyToClipboard(el_id) {
 	window.getSelection().removeAllRanges();
 	//showPopUp();
 }
-
-/*
-function showPopUp() {
-	document.getElementById("popup").style.display="block";
-} */
