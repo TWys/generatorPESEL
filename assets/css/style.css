@@ -73,6 +73,7 @@ input {
 	background-color: white;
 	border: solid 3px black;
 	margin: 10px 0; 
+	cursor: pointer;
 }
 
 footer {
