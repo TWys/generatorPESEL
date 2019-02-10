@@ -137,5 +137,4 @@ function copyToClipboard(el_id) {
     window.getSelection().addRange(range);
 	document.execCommand("copy");
 	window.getSelection().removeAllRanges();
-	//showPopUp();
 }
